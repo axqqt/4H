@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = ["python311"]  # Adjust to your Python version  
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]  
+
+[phases.build]
+cmds = []  # No build step needed for pure Python  
+
+[phases.start]
+cmds = ["python hour.py"]  # Adjust based on your entry point  
+
